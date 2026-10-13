@@ -1,0 +1,4 @@
+﻿Student Record & Academic Management Platform
+
+GitHub Repository Link:
+https://github.com/shubhamdeshmukh1027/student-academic-platform
