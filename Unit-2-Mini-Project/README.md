@@ -1,315 +1,237 @@
 ﻿# Student Record and Academic Management Platform
-
-## Unit 2 Mini Project — Agile Methodology
+## Agile Mini-Project Solution Report — DevOps Unit 2
 
 **Student Name:** Shubham Deshmukh  
-**PRN / Roll No:** 2125UDSM1027  
-**Course:** DevOps — Unit 2 (Agile Methodology)  
-**Submission Date:** September 6, 2026
+**PRN:** 2125UDSM1027  
+**Department:** AI & Data Science  
+**Training Division:** Careertiq Training & Engineering Division  
+**Report Date:** September 6, 2026
 
 ---
 
 ## 1. Project Overview
 
-The Student Record and Academic Management Platform is designed to streamline higher education institutional operations. It aims to address fragmented record-keeping systems, paper-based attendance tracking, delayed academic reporting, and inadequate access control.
+The Student Record and Academic Management Platform is intended to help manage student information and academic records in a structured and accessible way. The project applies Agile principles to organize requirements, prioritize features, plan sprints, and track development work.
 
-This Unit 2 mini project focuses on Agile product planning, Scrum roles, project epics, user stories, acceptance criteria, product backlog prioritization, sprint planning, Scrum board architecture, and Agile framework comparison.
+## 2. Business Problem and Vision
 
-## 2. Business Problem
+Student-related information can become difficult to maintain when records are managed through disconnected files or manual processes. The proposed platform aims to organize student records and academic information in one system.
 
-Educational institutions may face challenges such as:
+**Vision:** Build a reliable, user-friendly platform that supports efficient student record management and academic administration.
 
-- Fragmented student records.
-- Manual attendance tracking.
-- Delays in academic reporting and result publication.
-- Inefficient course registration.
-- Inadequate access control and data protection.
-- Time-consuming report generation.
+## 3. Stakeholder Personas
 
-The proposed platform aims to centralize academic information and improve administrative efficiency through a unified web-based solution.
+The project considers the needs of the following stakeholders:
 
-## 3. Product Vision
+- **Administrator:** Maintains system information and manages access.
+- **Faculty Member:** Uses student and academic information for academic activities.
+- **Student:** Needs convenient access to relevant personal and academic records.
 
-> Develop a secure and user-friendly Student Record and Academic Management Platform that enables educational institutions to efficiently manage student records, attendance, academic performance, course registration, and reporting through a scalable web-based application.
+## 4. Minimum Viable Product (MVP)
 
-### Mission
+The MVP focuses on the essential capabilities required to demonstrate the platform's core value.
 
-Deliver an intuitive, accessible, and scalable platform that digitizes student lifecycles, automates course and attendance handling, and supports academic performance tracking.
+- Maintain student records.
+- Organize academic information.
+- Support authorized access to relevant information.
+- Provide a clear and usable interface.
+- Validate input and handle errors appropriately.
 
-### Primary Stakeholders
+Additional features can be prioritized after feedback from stakeholders.
 
-- University Administrators
-- Faculty Members
-- Students
-- Academic Coordinators
-- System Administrators
+## 5. Product Roadmap
 
-## 4. Business and System Requirements
+The roadmap is organized into incremental stages:
 
-### Functional Requirements
+1. Requirement analysis and backlog preparation.
+2. MVP planning and interface design.
+3. Core student-record functionality.
+4. Academic information and validation.
+5. Testing, feedback, and improvements.
+6. Final review and project documentation.
 
-- User authentication and profile management.
-- Student registration and student search.
-- Course enrollment and course assignment.
-- Real-time attendance tracking.
-- Marks entry and grade calculation.
-- Transcript and report generation.
-- Notifications for attendance and examination updates.
+## 6. Agile Methodology
 
-### Non-Functional Requirements
+Agile development delivers work in small increments, encourages collaboration, and adapts to feedback. Scrum is recommended as the primary framework for planning and reviewing project work.
 
-- Proposed operational availability target of 99.9%.
-- Search response time below 2 seconds.
-- Role-Based Access Control (RBAC).
-- End-to-end data encryption.
-- Responsive web design.
+### Scrum Roles
 
-These are project requirements and targets, not verified measurements from an implemented application.
+- **Product Owner:** Prioritizes the product backlog and communicates product goals.
+- **Scrum Master:** Supports Scrum practices and helps remove impediments.
+- **Developers:** Design, implement, test, and deliver increments.
 
-## 5. Scrum Roles and Responsibilities
+## 7. Project Epics
 
-| Scrum Role | Assigned Personnel | Responsibilities |
+The product backlog is organized into these seven epics:
+
+1. Student Record Management
+2. Academic Information Management
+3. User Access and Permissions
+4. Search and Record Retrieval
+5. Data Validation and Error Handling
+6. User Interface and Usability
+7. Testing, Quality, and Documentation
+
+## 8. User Stories and Acceptance Criteria
+
+### US-01: Create a Student Record
+**User story:** As an administrator, I want to create a student record so that student information can be maintained centrally.
+
+**Acceptance criteria:**
+- Required fields are validated.
+- Valid information can be saved.
+- Invalid input produces a clear error message.
+
+### US-02: View Student Details
+**User story:** As an authorized user, I want to view student details so that I can access the required information.
+
+**Acceptance criteria:**
+- The selected student's information is displayed clearly.
+- Missing or unavailable records are handled appropriately.
+- Access is restricted according to permissions.
+
+### US-03: Update Student Information
+**User story:** As an authorized administrator, I want to update student details so that records remain accurate.
+
+**Acceptance criteria:**
+- Existing information can be edited.
+- Changes are validated before saving.
+- The updated information is reflected when viewed again.
+
+### US-04: Manage Academic Information
+**User story:** As a faculty member, I want academic information to be organized so that it can be reviewed efficiently.
+
+**Acceptance criteria:**
+- Academic information is associated with the appropriate student.
+- Required values are validated.
+- Information is displayed in an understandable format.
+
+### US-05: Search Student Records
+**User story:** As an authorized user, I want to search for student records so that I can find information efficiently.
+
+**Acceptance criteria:**
+- Search input is validated.
+- Matching records are displayed.
+- A useful message is shown when no records match.
+
+### US-06: Control User Access
+**User story:** As an administrator, I want access to be controlled so that student information is available only to authorized users.
+
+**Acceptance criteria:**
+- Access permissions are applied consistently.
+- Unauthorized actions are rejected.
+- Errors do not expose sensitive information.
+
+### US-07: Validate Data
+**User story:** As a system user, I want input validation so that incomplete or incorrect data can be detected.
+
+**Acceptance criteria:**
+- Mandatory fields are checked.
+- Invalid data is rejected with understandable feedback.
+- Valid data can proceed through the workflow.
+
+### US-08: Test and Review the Platform
+**User story:** As a project team member, I want core functionality to be tested so that issues can be identified before delivery.
+
+**Acceptance criteria:**
+- Important workflows have test cases.
+- Defects are recorded and reviewed.
+- The team reviews completed work against acceptance criteria.
+
+## 9. Story Points and Prioritized Backlog
+
+Fibonacci story points (1, 2, 3, 5, 8, 13) can be used to estimate relative effort, complexity, and uncertainty.
+
+The Product Owner prioritizes backlog items according to user value, dependencies, risk, and effort. Core record creation, viewing, updating, and validation should be considered before lower-priority enhancements.
+
+Story-point values should be agreed upon by the team during estimation rather than treated as exact hours.
+
+## 10. Sprint Roadmap
+
+### Sprint 1: Planning and Foundation
+- Confirm project vision and requirements.
+- Create the initial product backlog.
+- Define personas and acceptance criteria.
+- Prepare the basic design and development plan.
+
+### Sprint 2: Core Student Records
+- Implement the essential record workflow.
+- Add input validation.
+- Review functionality against acceptance criteria.
+
+### Sprint 3: Academic Information and Access
+- Organize academic information.
+- Apply appropriate access rules.
+- Improve search and error handling.
+
+### Sprint 4: Testing and Delivery
+- Test core workflows.
+- Resolve identified defects.
+- Collect feedback and make improvements.
+- Complete documentation and final review.
+
+Sprint scope should be adjusted to actual team capacity and progress.
+
+## 11. Scrum Board
+
+A five-column Scrum/Kanban-style board can track work through these stages:
+
+| Backlog | To Do | In Progress | Testing/Review | Done |
+|---|---|---|---|---|
+| Future work | Selected work ready to start | Work currently being developed | Work awaiting verification | Accepted completed work |
+
+Tasks move across the board as their status changes. Work-in-progress limits can help the team focus on completing tasks instead of starting too many at once.
+
+## 12. Scrum Ceremonies
+
+- **Sprint Planning:** Establish the sprint goal and select work.
+- **Daily Scrum:** Inspect progress and identify impediments.
+- **Sprint Review:** Demonstrate the increment and gather stakeholder feedback.
+- **Sprint Retrospective:** Identify improvements for the next sprint.
+- **Backlog Refinement:** Clarify, split, and prioritize upcoming work.
+
+## 13. Agile Framework Comparison
+
+| Framework | Main Focus | Suitable Use |
 |---|---|---|
-| Product Owner | Shubham Deshmukh | Defines product vision, prioritizes backlog, and establishes acceptance criteria |
-| Scrum Master | DevOps Project Lead | Facilitates Scrum ceremonies and helps remove blockers |
-| Development Team | Cross-functional engineers | Designs, develops, tests, and supports delivery automation |
+| Scrum | Time-boxed sprints and defined roles | Incremental product development |
+| Kanban | Visualizing flow and limiting work in progress | Continuous workflow |
+| Extreme Programming (XP) | Engineering practices and frequent feedback | Improving software quality |
+| Lean | Reducing waste and maximizing value | Improving process efficiency |
+| LeSS | Scaling Scrum across multiple teams | Larger products with multiple teams |
+| SAFe | Coordinating Agile work across an enterprise | Large organizations |
+| Scrum@Scale | Scaling Scrum using interconnected teams | Multi-team Scrum environments |
 
-## 6. Project Epics
+## 14. Recommended Approach
 
-The platform is organized into seven major epics.
+Scrum augmented with selected Extreme Programming practices is recommended for this mini-project.
 
-| Epic | Module | Key Features |
-|---|---|---|
-| Epic 1 | Student Management | Registration, profiles, search, updates, and record management |
-| Epic 2 | Course Management | Add courses, update course details, and assign students |
-| Epic 3 | Attendance Management | Record attendance, view logs, and generate summaries |
-| Epic 4 | Marks and Academic Performance | Enter marks, calculate grades, and generate result sheets |
-| Epic 5 | Authentication and Security | Login, logout, password reset, sessions, and RBAC |
-| Epic 6 | Notifications and Alerts | Attendance alerts, examination notifications, and result announcements |
-| Epic 7 | Reporting and Analytics | Student reports, attendance reports, transcripts, and performance analytics |
+Scrum provides sprint planning, backlog prioritization, reviews, and retrospectives. XP practices such as frequent testing, refactoring, and continuous integration can improve code quality and reduce the risk of defects.
 
-## 7. User Stories and Acceptance Criteria
+The approach should remain proportionate to the project size and available team resources.
 
-### US-01: User Login
+## 15. Deliverables Checklist
 
-**User Story:** As a registered user, I want to log in using my credentials so that I can access my personalized dashboard.
+- [ ] Project vision and problem statement
+- [ ] Stakeholder personas
+- [ ] MVP scope and roadmap
+- [ ] Product backlog and user stories
+- [ ] Acceptance criteria
+- [ ] Story-point estimation
+- [ ] Sprint plan
+- [ ] Scrum board
+- [ ] Agile framework comparison
+- [ ] Testing and review notes
+- [ ] Final project documentation
 
-**Acceptance Criteria:**
-- Valid credentials provide access to the appropriate dashboard.
-- Invalid credentials display an error without exposing sensitive information.
-- Sessions expire after the specified period of inactivity.
-- The login page meets the planned response-time target.
+## 16. Conclusion
 
-### US-02: Student Registration
+This mini-project applies Agile planning to the Student Record and Academic Management Platform. By organizing work into epics, user stories, prioritized backlog items, and sprints, the team can deliver the core functionality incrementally and improve it through testing and stakeholder feedback.
 
-**User Story:** As an administrator, I want to register students with personal and academic details so that their records are maintained centrally.
-
-**Acceptance Criteria:**
-- Mandatory fields such as email, PRN, date of birth, and program are validated.
-- Duplicate PRN or email entries are rejected.
-- A unique Student ID is generated after successful registration.
-- A confirmation email is planned upon successful creation.
-
-### US-03: Student Search
-
-**User Story:** As a faculty member or administrator, I want to search students by name, roll number, or department so that I can quickly access their profiles.
-
-**Acceptance Criteria:**
-- Search supports autocomplete.
-- Results meet the defined response-time target.
-- Results can be filtered by department, batch, and status.
-
-### US-04: Record Attendance
-
-**User Story:** As a faculty member, I want to record attendance for assigned lectures so that accurate attendance records are maintained.
-
-**Acceptance Criteria:**
-- Faculty can select a course and lecture date or slot.
-- The student roster supports Present, Absent, and Late status.
-- Saving attendance updates the record and logs a timestamp.
-- Attendance summaries can be downloaded.
-
-### US-05: Add Course
-
-**User Story:** As an academic coordinator, I want to add courses with credits and syllabus details so that students can register for them.
-
-**Acceptance Criteria:**
-- Course code, title, credits, department, and faculty are captured.
-- Course codes must be unique.
-- Newly created courses default to Active status.
-
-### US-06: Enter and Calculate Marks
-
-**User Story:** As a faculty member, I want to enter student assessment marks so that grades and result sheets can be generated.
-
-**Acceptance Criteria:**
-- Negative marks and marks exceeding the maximum are rejected.
-- Grades are calculated using the configured formula.
-- Grade distributions can be presented visually.
-
-### US-07: Attendance Alert
-
-**User Story:** As a system administrator, I want alerts when attendance falls below 75% so that timely intervention can occur.
-
-**Acceptance Criteria:**
-- The planned alert process runs at the end of each week.
-- Notifications are sent to the student and academic advisor.
-- An audit record is generated.
-
-### US-08: Generate Reports
-
-**User Story:** As an administrator, I want to generate performance and attendance reports in PDF or Excel format so that official records can be archived.
-
-**Acceptance Criteria:**
-- Reports can be filtered by date range, department, and course.
-- Export generates a formatted PDF or XLSX file within the specified target time.
-
-## 8. Product Backlog and Story Points
-
-Story points follow the Fibonacci estimation approach described in the project.
-
-| Story Points | Complexity | Example |
-|---:|---|---|
-| 1 | Very Easy | Text change or simple lookup |
-| 2 | Easy | Basic form validation |
-| 3 | Moderate | Standard CRUD feature |
-| 5 | Difficult | Multi-table query or file export |
-| 8 | Very Difficult | Core module or authentication integration |
-| 13 | Highly Complex | Complex integration or analytics engine |
-
-### Prioritized Product Backlog
-
-| Priority | User Story / Feature | Story Points | Target Sprint |
-|---|---|---:|---|
-| High | User login and session management | 5 | Sprint 1 |
-| High | Student registration | 5 | Sprint 1 |
-| High | Student search | 3 | Sprint 1 |
-| High | Record lecture attendance | 8 | Sprint 2 |
-| High | Add and update course | 5 | Sprint 2 |
-| Medium | Assign students to courses | 5 | Sprint 2 |
-| Medium | Enter assessment marks | 8 | Sprint 3 |
-| Medium | Attendance and result reports | 5 | Sprint 3 |
-| Medium | Low-attendance alerts | 5 | Sprint 3 |
-| Low | Academic performance analytics UI | 8 | Sprint 4 |
-
-## 9. Sprint Planning and Release Roadmap
-
-### Sprint 1: Core Foundation and Authentication
-
-- Initialize the Git repository and plan the CI/CD pipeline.
-- Design the PostgreSQL schema for user profiles.
-- Plan user registration and JWT authentication.
-- Build the base dashboard layout.
-- Plan unit and integration testing for the authentication API.
-
-**Planned velocity:** 50 story points.
-
-### Sprint 2: Student and Course Management
-
-- Develop student add, update, and search APIs.
-- Design the student profile interface.
-- Build course creation and update forms.
-- Plan student-to-course assignment.
-- Validate RBAC permissions for administrators and faculty.
-
-**Planned velocity:** 45 story points.
-
-### Sprint 3: Attendance, Marks, and Reporting
-
-- Develop the faculty attendance entry interface.
-- Implement automated grade calculation.
-- Plan PDF and Excel report exports.
-- Configure low-attendance email alerts.
-
-**Planned velocity:** 40 story points.
-
-### Sprint 4: Analytics
-
-- Plan the academic performance analytics interface.
-- Review stakeholder feedback.
-- Prioritize improvements for a future release.
-
-## 10. Scrum Board Architecture
-
-The project uses a five-stage workflow:
-
-1. **Backlog:** Features and tasks awaiting prioritization.
-2. **To Do:** Tasks selected and ready to begin.
-3. **In Progress:** Tasks currently being developed.
-4. **Testing / QA:** Tasks undergoing verification.
-5. **Completed (Done):** Tasks that satisfy the agreed acceptance criteria.
-
-Example work items include user login, student registration, attendance recording, course creation, marks entry, report generation, database schema migration, automated tests, and CI/CD setup.
-
-## 11. Scrum Ceremonies
-
-### Sprint Planning
-The Product Owner presents prioritized backlog items. The team estimates effort, reviews capacity, and defines the Sprint Goal.
-
-### Daily Scrum
-A 15-minute meeting where team members discuss:
-- What did I complete yesterday?
-- What will I work on today?
-- What blockers am I facing?
-
-### Sprint Review
-The team demonstrates the working software increment and collects stakeholder feedback.
-
-### Sprint Retrospective
-The team reviews what went well, what challenges occurred, and which improvements should be implemented in the next Sprint.
-
-## 12. Comparison of Agile Frameworks
-
-| Framework | Main Focus | Suitability for This Project |
-|---|---|---|
-| Scrum | Iterative Sprints, roles, and ceremonies | High |
-| Kanban | Continuous flow and work-in-progress limits | Medium |
-| Extreme Programming (XP) | TDD, pair programming, and engineering quality | High as complementary practices |
-| Lean Development | Waste reduction and value delivery | Medium |
-| Large-Scale Scrum (LeSS) | Scaling Scrum across teams | Low for the initial single-team scope |
-| Scaled Agile Framework (SAFe) | Enterprise-scale planning and coordination | Low for the initial scope |
-| Scrum@Scale | Scaling coordination across Scrum teams | Low for the initial scope |
-
-### Framework Recommendation
-
-**Scrum**, supported by Extreme Programming practices such as Continuous Integration/Continuous Delivery (CI/CD) and Test-Driven Development (TDD), is selected as the proposed primary methodology.
-
-It provides structured planning, clear responsibilities, iterative delivery, and regular stakeholder feedback.
-
-## 13. Proposed Technology and DevOps Practices
-
-- **Version Control:** Git and GitHub
-- **Database:** PostgreSQL
-- **Authentication:** JWT-based authentication
-- **CI/CD:** GitHub Actions
-- **Testing:** Unit and integration testing
-- **Future deployment planning:** Docker and related DevOps automation
-
-These technologies are identified in the project plan; their inclusion does not mean that every component has been implemented.
-
-## 14. Expected Outcomes
-
-- Centralized student and academic records.
-- More efficient course and attendance management.
-- Improved tracking of academic performance.
-- Clearer requirements and prioritized development tasks.
-- Better collaboration through Scrum roles and ceremonies.
-- A structured foundation for iterative software delivery.
-
-## 15. Conclusion
-
-This Unit 2 mini project applies Agile and Scrum practices to the Student Record and Academic Management Platform. It defines the product vision, stakeholder needs, Scrum responsibilities, project epics, user stories, acceptance criteria, prioritized backlog, sprint roadmap, Scrum board, and framework recommendation.
-
-These planning artifacts provide a foundation for future implementation, testing, deployment, and continuous improvement.
+The recommended Scrum approach, supported by selected XP engineering practices, provides a structured way to manage work, review progress, and focus on quality.
 
 ---
 
-## Author
-
-**Shubham Deshmukh**  
+**Prepared by:** Shubham Deshmukh  
 **PRN:** 2125UDSM1027  
-**Course:** DevOps — Unit 2 (Agile Methodology)
-
----
-
-*This README documents the planned Agile project. Actual implementation status and performance should be updated as development progresses.*
+**DevOps Unit 2 Mini-Project**
